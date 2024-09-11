@@ -1,0 +1,49 @@
+*{
+    border:0;
+    margin:0;
+    padding:0;
+
+}
+
+#cabeca{
+    color: #fff;
+    font-size: arial;
+    padding-left: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: brown;
+}
+
+.contato{
+    text-decoration: none;
+    color:#fff;
+    font-size: 17px;
+}
+
+#navegacao{
+    text-align: right;
+    padding-right: 5px;
+}
+
+div{
+    display: flex;
+    justify-content: right;
+}
+
+.section-1{
+    background-color: brown;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    width: 90%;
+    height: 600px;
+    border-radius: 30px;
+}
+.preencha {
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    border: 5px;
+    background-color: rgb(129, 58, 58);
+}
