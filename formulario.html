@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Birosca Lara Coffee - Formulário de Contato</title>
+    <style>
+
+        #nome{
+            background-color: rgb(148, 77, 59);
+        }
+        #email{
+            background-color: rgb(148, 77, 59);
+        }
+        #idade{
+            background-color: rgb(148, 77, 59);
+        }
+        #preferencia{
+            background-color: rgb(148, 77, 59);
+            color: #f8c8c8;
+        }
+        #hora{
+            background-color: rgb(148, 77, 59);
+            color: #f8c8c8;
+        }
+        #mensagem{
+            background-color: rgb(148, 77, 59);
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #ca9090;
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: rgb(97, 48, 48);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #e6a9a9;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="number"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #42251d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #8d5d49;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulário de Contato - Birosca Lara Coffee</h2>
+        <form action="process_form.php" method="POST">
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="idade">Idade:</label></td>
+                    <td><input type="number" id="idade" name="idade" min="1" max="100" required></td>
+                </tr>
+                <tr>
+                    <td><label for="preferencia">Preferência de Bebida:</label></td>
+                    <td>
+                        <select id="preferencia" name="preferencia">
+                            <option value="cafe">Café</option>
+                            <option value="cha">Chá</option>
+                            <option value="suco">Suco</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hora">Horário Preferido:</label></td>
+                    <td><input type="time" id="hora" name="hora" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mensagem">Mensagem:</label></td>
+                    <td><textarea id="mensagem" name="mensagem" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" id="enviar" value="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
